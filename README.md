@@ -19,13 +19,15 @@ Bài toán kinh điển: xác định email có spam hay không spam
 - sort lại theo một thể thống nhất
 - underfitting && overfitting
 - có những trường hợp đoán đúng lỗi này nó quan trọng hơn đoán đúng loại kia nên là cần phải tách ra
+### Buổi 3
+**MODEL:** Cây quyết định
 ### Buổi 4
 bài toán phân lớp( bài toán học máy)
 - dữ liệu huấn luyện: dữ liệu được chuẩn bị từ trước, được thu thấp
 - nguyên tác: khó liên kết tất cả thông tin bên trong bảng( khó nhất quán khi chuyển đổi)
 Các nhóm mô hình sẽ tương ứng với ý tưởng khác nhau của bài toán phân lớp
-1. mô hình kinh điển ? success thì done : sáng tạo ra mô hình mới;
-- KNN: ý tưởng đơn giản nhất -> tư duy ghi lại từ trước (thường được gọi là rote-learner: mô hình học vẹt - learest neighbor classifier)
+1. Mô hình kinh điển ? success thì done : sáng tạo ra mô hình mới;
+- **MODEL:** KNN: ý tưởng đơn giản nhất -> tư duy ghi lại từ trước (thường được gọi là rote-learner: mô hình học vẹt - learest neighbor classifier)
 - tư duy viết code:
 - 1.1 database
 - 1.2 cần một hàm khoảng cách xem ông nào giống ông nào - distance (ex: khoảng cách eclid, khoảng cách cosin,...)
@@ -34,3 +36,25 @@ Các nhóm mô hình sẽ tương ứng với ý tưởng khác nhau của bài 
 - Nếu k quá nhỏ thì kết quá dự đoán bị ảnh hưởng rất nhiều, kết quả bị nhiễu
 - nếu k quá lớn thì có thể dính các class gần
 ```
+2. 
+**MODEL:** Support Vector Machines => dự đoán đúng 100%
+- tư duy viết code: chia không gian sao cho phân biệt giữa các value nhất có thể -> dùng phương trình đường thẳng để so sánh nó
+- (hyperplane: siêu mặt phẳng) => thường làm việc với phương trình siêu mặt phẳng
+some problem:
+- thực tế dữ liệu phức tạp -> tách dữ liệu rất khó -> (khi dữ liệu nhiễu thì bỏ qua) + thêm một biến mở rộng (slack variables) => bỏ các điểm nhiễu
+- giải pháp khi một đường thẳng cong dạng para => dùng kernel trick => chuyển sang đường thẳng
+
+3.
+**MODEL:** Logistic regression => hồi quy logistic
+4. 
+**MODEL:** Bayes Classifier
+#### Noted: 
+Crowd-sourcing: gán nhãn dữ liệu
+
+
+
+
+
+
+
+  
