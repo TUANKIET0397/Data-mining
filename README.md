@@ -1,4 +1,3 @@
-<img width="1280" height="1177" alt="image" src="https://github.com/user-attachments/assets/0e38553e-d346-419f-8f15-3b3d7a41cdc2" />```bash
 **Khai thác dữ liệu (Data Mining):** là một lĩnh vực xuất hiện khi lượng dữ liệu 
 ngày càng nhiều và phức tạp. Hiểu một cách gần gũi, đây là quá trình tìm kiếm những 
 thông tin quan trọng ẩn bên trong các tập dữ liệu lớn mà mắt thường hoặc cách phân 
@@ -20,3 +19,18 @@ Bài toán kinh điển: xác định email có spam hay không spam
 - sort lại theo một thể thống nhất
 - underfitting && overfitting
 - có những trường hợp đoán đúng lỗi này nó quan trọng hơn đoán đúng loại kia nên là cần phải tách ra
+### Buổi 4
+bài toán phân lớp( bài toán học máy)
+- dữ liệu huấn luyện: dữ liệu được chuẩn bị từ trước, được thu thấp
+- nguyên tác: khó liên kết tất cả thông tin bên trong bảng( khó nhất quán khi chuyển đổi)
+Các nhóm mô hình sẽ tương ứng với ý tưởng khác nhau của bài toán phân lớp
+1. mô hình kinh điển ? success thì done : sáng tạo ra mô hình mới;
+- KNN: ý tưởng đơn giản nhất -> tư duy ghi lại từ trước (thường được gọi là rote-learner: mô hình học vẹt - learest neighbor classifier)
+- tư duy viết code:
+- 1.1 database
+- 1.2 cần một hàm khoảng cách xem ông nào giống ông nào - distance (ex: khoảng cách eclid, khoảng cách cosin,...)
+- 1.3 k (số lượng gần nhất để truy xuất)
+```bash
+- Nếu k quá nhỏ thì kết quá dự đoán bị ảnh hưởng rất nhiều, kết quả bị nhiễu
+- nếu k quá lớn thì có thể dính các class gần
+```
